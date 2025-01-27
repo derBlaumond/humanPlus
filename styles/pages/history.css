@@ -1,0 +1,384 @@
+/* Hero Section */
+.history-hero {
+    background-image: url('../../random-banner/history-hero-1.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin: 100px 0;
+}
+
+.history-hero h1 {
+    color: #FFF;
+    font-family: "Helvetica Neue";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.history-hero p {
+    color: #FFF;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.history-content-section {
+    padding: 100px 0;
+    text-align: center;
+    background-color: #00437C;
+    background: linear-gradient(135deg, #0E1F26, #34728C);
+}
+
+.history-content-section .history-content-title {
+    background: linear-gradient(to right, #FFFFFF 10%, #57AEFF 50%, #E5FF53 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 60px 0;
+    text-align: center;
+    font-family: "Heiti SC";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.history-content-section .history-divider {
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(to right, #327DC1, #F1FFA1);
+    margin: 20px auto;
+}
+
+.history-content-section .history-content-text {
+    color: #FFF;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 142.857%;
+    margin-bottom: 120px;
+}
+
+.history-content-section .history-image-section {
+    background-image: url('../../random-banner/history-image-1.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+}
+
+.history-content-section .history-circle-gradient-line {
+    /* margin: 10px;
+    width: 100px;
+    height: auto;
+    position: relative; */
+    padding: 130px 0px;
+    max-width: 50%;
+    object-fit: contain;
+}
+
+.history-content-section .history-tag-section {
+    padding: 40px 20px;
+    margin-bottom: 100px;
+    text-align: center;
+    position: relative;
+}
+
+.history-content-section .history-tag-container {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    /* animation: scroll 10s linear infinite; */
+    align-items: center;
+    height: 100%;
+    top: 50%;
+    /* transform: translateY(-50%); */
+}
+
+.history-content-section .history-tag {
+    background-color: white;
+    color: black;
+    padding: 40px 80px;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    /* display: inline-block; */
+    text-align: center;
+    /* flex-shrink: 0; */
+    /* white-space: nowrap; */
+    color: #000;
+    font-family: Pretendard;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.history-content-section .history-tag:hover {
+    background-color: #00437C;
+    color: white;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* 반응형 디자인 */
+@media (max-width: 1200px) {
+    .history-tag {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .history-tag {
+        font-size: 10px;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .history-tag {
+        font-size: 8px;
+        padding: 4px 10px;
+    }
+}
+
+/* scroller 부분 */
+
+.scroller {
+    max-width: 100%;
+    min-height: 200px;
+    margin: 20px auto
+  }
+  
+  .scroller__inner {
+    padding-block: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .scroller[data-animated="true"] {
+    overflow: hidden;
+  }
+  
+  .scroller[data-animated="true"] .scroller__inner {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    flex-wrap: nowrap;
+    -webkit-animation: scroll var(--_animation-duration, 40s)
+      var(--_animation-direction, forwards) linear infinite;
+            animation: scroll var(--_animation-duration, 40s)
+      var(--_animation-direction, forwards) linear infinite;
+  }
+  
+  .scroller[data-direction="right"] {
+    --_animation-direction: reverse;
+  }
+  
+  .scroller[data-direction="left"] {
+    --_animation-direction: forwards;
+  }
+  
+  .scroller[data-speed="fast"] {
+    --_animation-duration: 20s;
+  }
+  
+  .scroller[data-speed="slow"] {
+    --_animation-duration: 60s;
+  }
+  
+  @-webkit-keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
+  
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
+
+  /* 회사 개요 섹션 */
+.history-company-overview {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    padding: 20px;
+    margin-top: 300px;
+    background: linear-gradient(155deg, #0E1F26 54.45%, #34728C 98.22%);
+    color: white;
+    text-align: center;
+    padding: 80px;
+    margin-bottom: 350px;
+}
+
+.history-company-overview .overview-header {
+    margin-bottom: 200px;
+}
+
+.history-company-overview .overview-header hr {
+    width: 200px;
+    height: 2px;
+    margin: 50px auto;
+    border: 0;
+    background: linear-gradient(90deg, #327DC1 0.24%, #F1FFA1 261.28%);
+}
+
+.history-company-overview .overview-header h1 {
+    color: white;
+    font-family: Pretendard;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+.history-company-overview .overview-header p {
+    font-size: 20px;
+    color: white;
+    font-family: Pretendard;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.history-company-overview .factory {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    gap: 40px;
+}
+
+.history-company-overview .factory:last-child {
+    border-bottom: none;
+}
+
+.history-company-overview .factory-image {
+    width: 300px;
+    height: 530px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.history-company-overview .factory-info {
+    flex: 1;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.history-company-overview .factory-info.right{
+    flex: 1;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.history-company-overview .factory-info h2 {
+    color: #FFF;
+    font-family: Pretendard;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3vw;
+    margin-bottom: 10px;
+}
+
+.history-company-overview .factory-info p {
+    color: #FFF;
+    font-family: Pretendard;
+    font-size: 1.6vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+}
+
+@media (max-width: 768px) {
+    .history-company-overview .factory {
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .history-company-overview .factory-image {
+        order: 1; /* 첫 번째 */
+        max-width: 80%;
+        height: 200px;
+    }
+
+    .history-company-overview .factory-info {
+        order: 2; /* 두 번째 */
+        width: 90%;
+    }
+}
+
+
+/* 회사 연혁 섹션 */
+.history-timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.history-timeline .timeline-header {
+    margin-bottom: 50px;
+}
+
+.history-timeline .timeline-header hr {
+    width: 100px;
+    height: 3px;
+    margin: 50px auto;
+    background: linear-gradient(90deg, #327DC1 0.24%, #F1FFA1 261.28%);
+    border: 0;
+}
+
+.history-timeline .timeline-header p {
+    color: black;
+    font-family: Pretendard;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+.history-timeline .timeline-header p span {
+    font-size: 30px;
+    color: black;
+    font-family: Pretendard;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+}
+
+
+.responsive-image {
+    max-width: 100%; /* 화면 크기에 맞게 조정 */
+    height: auto;    /* 이미지 비율 유지 */
+    margin: 100px 0;  /* 이미지 간 여백 */
+}

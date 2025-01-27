@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url("https://db.onlinewebfonts.com/t/0d49fc455f4a8951a42daf952412a713.eot");
+    src: url("https://db.onlinewebfonts.com/t/0d49fc455f4a8951a42daf952412a713.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/0d49fc455f4a8951a42daf952412a713.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/0d49fc455f4a8951a42daf952412a713.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/0d49fc455f4a8951a42daf952412a713.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/0d49fc455f4a8951a42daf952412a713.svg#Helvetica Neue Regular")format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url("../../resources/fonts/HelveticaNeue-CondensedBold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: "Heiti SC";
+    src: url("../../resources/fonts/heiti-sc-medium.ttf") format("woff");
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url("../../resources/fonts/helvetica-webfont.ttf") format("woff");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 기본 스타일 */
+body {
+    font-family: 'Pretendard', 'Helvetica', 'Helvetica Neue', 'Heiti SC', 'Inter', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none; /* 링크 밑줄 제거 */
+}
+
+html {
+    scroll-behavior: smooth;
+}

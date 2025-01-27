@@ -1,0 +1,41 @@
+/* 공통 스타일 */
+@import "base/base.css";
+@import "base/animation.css";
+
+/* 컴포넌트 스타일 */
+@import "component/footer.css";
+@import "component/nav.css";
+@import "component/slider-card.css";
+@import "component/contact-form.css";
+@import "component/gradient-circle-line.css";
+@import "component/gradient-line-divider.css";
+@import "component/bottom-logo.css";
+@import "component/more-button.css";
+
+/* 페이지별 스타일 */
+@import "pages/index.css";
+@import "pages/contact.css";
+@import "pages/history.css";
+@import "pages/technology.css";
+@import "pages/news.css";
+
+.language-switcher {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #333;
+    font-size: 14px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.language-switcher:hover {
+    border-color: #999;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}

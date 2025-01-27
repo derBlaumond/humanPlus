@@ -1,0 +1,282 @@
+.news-hero {
+    background: url('../../random-banner/history-hero-1.png') no-repeat center center;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin: 100px 0;
+}
+
+.news-hero h1 {
+    font-family: "Helvetica Neue";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.news-hero p {
+    color: #FFF;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.news-main-title {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff; /* 배경색 */
+    box-sizing: border-box;
+}
+
+.news-main-title .title {
+    font-family: "Heiti SC";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 126.214%;
+    background: linear-gradient(92deg, #00437C -8.28%, #3F8CD3 40.15%, #E5FF53 80.07%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent; /* 투명 텍스트 */
+    margin-bottom: 20px;
+}
+
+.news-main-title .subtitle {
+    color: #727272;
+    font-family: Pretendard;
+    font-size: 3.4vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+
+.news-main-title .news-news-division {
+    max-width: 1200px;
+}
+
+
+.news-future-vision-section {
+    background-color: #0E1F26;
+}
+
+.news-future-vision-section .vision-banner {
+    position: relative;
+    text-align: left;
+}
+
+.news-future-vision-section .vision-image {
+    width: 100%; /* 이미지가 부모 컨테이너 너비에 맞게 조정 */
+    height: auto; /* 이미지 비율 유지 */
+    object-fit: cover; /* 이미지가 컨테이너에 꽉 차도록 */
+}
+
+.news-future-vision-section .vision-text {
+    position: absolute;
+    bottom: 10%; /* 이미지의 하단에서부터 10% 위 */
+    left: 5%; /* 이미지의 좌측에서부터 5% 오른쪽 */
+    transform: none; /* transform 제거 */
+    color: #FFF;
+}
+
+.news-future-vision-section .vision-text h1 {
+    font-family: "Helvetica Neue";
+    font-size: 6vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.news-future-vision-section .vision-text p {
+    margin-top: 2vw;
+    color: #FFF;
+    font-family: Pretendard;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 142.81%;
+}
+
+/* News Growth Business Section */
+.news-growth-business-section {
+    background: linear-gradient(155deg, #0E1F26 54.45%, #34728C 98.22%);
+    padding: 340px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 150px; /* 항목 간 간격 */
+}
+
+.news-growth-business-section .business-item {
+    padding: 0px 5%;
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+    color: #fff; /* 텍스트 색상 */
+}
+
+.news-growth-business-section .business-item .card-image {
+    display: flex;
+    max-width: 370px;
+    max-height: 320px;
+    border-radius: 11px; /* 둥근 모서리 */
+    background: #FFF;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0px 7.51px 15.02px 2.253px rgba(107, 107, 107, 0.25);
+}
+
+.news-growth-business-section .business-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 85%;
+    display: block;
+}
+
+.news-growth-business-section .business-content {
+    flex: 1;
+    max-width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.news-growth-business-section .business-content.right {
+    text-align: end;
+}
+
+.news-growth-business-section .business-content.left {
+    text-align: start;
+}
+
+.news-growth-business-section .business-content h2 {
+    color: #FFF;
+    font-family: "Helvetica Neue";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.news-growth-business-section .business-divider {
+    margin-bottom: 30px;
+}
+
+.news-growth-business-section .business-content h3 {
+    color: #FFF;
+    font-family: Pretendard;
+    font-size: 23.5px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.news-growth-business-section .business-content p {
+    color: #FFF;
+    font-family: Pretendard;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .news-growth-business-section .business-item {
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .news-growth-business-section .card-image {
+        order: 1; /* 첫 번째 */
+        width: 75%;
+    }
+
+    .news-growth-business-section .business-content {
+        order: 2; /* 두 번째 */
+        max-width: 75%;
+    }
+}
+
+/* News Highlist Section */
+.news-highlight-section {
+    position: relative;
+    text-align: center;
+    padding: 250px 20px;
+}
+
+.news-highlight-section .highlight-background {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* 원 이미지의 너비 */
+    min-height: 100%;
+    background-image: url('../../resources/img/background_circle.png'); /* 배경 이미지 경로 */
+    background-size: contain;
+    background-repeat: no-repeat; /* 이미지 반복 방지 */
+    background-position: center; /* 이미지가 중앙에 배치되도록 설정 */
+    z-index: -1; /* 콘텐츠 뒤로 배치 */
+}
+
+.news-highlight-section .highlight-content {
+    position: relative;
+    z-index: 1; /* 배경 위에 표시 */
+}
+
+/* 제목 스타일 */
+.news-highlight-section .highlight-title {
+    font-family: "Heiti SC";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 126.214%;
+    margin-bottom: 10px;
+    background: linear-gradient(92deg, #00437C -8.28%, #3F8CD3 46.15%, #E5FF53 70.07%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 40px;
+}
+
+.news-highlight-section .gradient-line-divider {
+    width: 100px;
+    height: 3px;
+}
+
+.news-highlight-section .highlight-image {
+    margin-bottom: 0;
+}
+
+.news-highlight-section .highlight-line {
+    width: 30px;
+    height: auto;
+}
+
+.news-highlight-section .highlight-image img {
+    width: 80%; /* 이미지 크기 조정 */
+    max-width: 600px; /* 최대 너비 제한 */
+    border-radius: 15px; /* 이미지 둥근 모서리 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+}
+
+.news-highlight-section .highlight-description {
+    color: #0B1620;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 134.286%;
+    margin-top: 20px;
+}

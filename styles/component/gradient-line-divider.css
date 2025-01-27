@@ -1,0 +1,8 @@
+.gradient-line-divider {
+    max-width: 100%;
+    width: 200px;
+    height: 2px;
+    margin: 50px auto;
+    border: 0;
+    background: linear-gradient(90deg, #327DC1 0.24%, #F1FFA1 261.28%);
+}

@@ -1,0 +1,90 @@
+.fade-in, .fade-in-3, .slide-in-left, .slide-up, .slide-in-right {
+    opacity: 0; /* 기본 투명도 */
+}
+
+.fade-in.animate {
+    animation: fadeIn 2s forwards;
+}
+
+.fade-in-3.animate {
+    animation: fadeIn 0.5s ease-in-out; /* 2초 동안 서서히 나타남 */
+    animation-delay: 3s; /* 3초 뒤에 애니메이션 시작 */
+    animation-fill-mode: forwards; /* 애니메이션 종료 후 상태 유지 */
+}
+
+.slide-in-left.animate {
+    animation: slideInFromLeft 1s forwards;
+}
+
+.slide-up.animate {
+    animation: slideUp 1s forwards;
+}
+
+.slide-in-right.animate {
+    animation: slideInFromRight 1s forwards;
+}
+
+.curtain-reveal.animate {
+    animation: curtainReveal 3s ease-in-out; /* 애니메이션 3초 동안 실행 */
+    display: inline-block; /* 텍스트나 요소에 적합한 레이아웃 */
+}
+
+@keyframes scrollDown {
+    0% {
+        transform: translateY(0); /* 첫 번째 카드가 컨테이너 상단에 위치 */
+    }
+    100% {
+        transform: translateY(-100%); /* 복제본 포함 모든 카드가 한 사이클 완료 */
+    }
+}
+
+@keyframes curtainReveal {
+    0% {
+        clip-path: inset(0 100% 0 0);
+    }
+    100% {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

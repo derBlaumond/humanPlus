@@ -1,0 +1,182 @@
+/* Contact Section */
+.contact-contact-section {
+    margin-top: 15px;
+    position: relative;
+}
+
+.contact-contact-section .contact-header {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    position: relative;
+    overflow: visible;
+    height: 600px;
+    padding: 40px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact-contact-section .contact-description .contact-title {
+    margin-top: 50px;
+    color: #000;
+    font-family: "Helvetica Neue";
+    font-size: 56.5px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    z-index: 2;
+}
+
+.contact-contact-section .contact-description p {
+    margin-top: 50px;
+    color: #000;
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160.379%;
+    float: left;
+    z-index: 2;
+}
+
+.contact-contact-section .image-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 20px;
+    z-index: -2;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    width: 73%;
+}
+
+.contact-contact-section .image-grid img {
+    width: 100%;
+    min-height: 320px;
+    position: relative;
+    z-index: -2;
+}
+
+.contact-contact-section .form-subtitle {
+    color: #436695;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    font-size: 24px;
+    color: #436695;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.contact-contact-section .form-subtitle strong {
+    color: #436695;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 148.109%;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+.contact-contact-section .form-group {
+    margin-bottom: 40px;
+}
+
+.contact-contact-section .name-group {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-contact-section .checkbox-group {
+    margin-bottom: 40px;
+}
+
+.contact-contact-section .checkbox-group input[type="checkbox"] {
+    appearance: none; /* 기본 브라우저 체크박스 스타일 제거 */
+    -webkit-appearance: none; /* 웹킷 브라우저 기본 스타일 제거 */
+    width: 20px;
+    height: 20px;
+    background-color: white; /* 배경색 */
+    cursor: pointer;
+    outline: none;
+    display: inline-block;
+    position: relative;
+}
+
+.contact-contact-section .checkbox-group input[type="checkbox"]:checked {
+    background-color: white /* 체크된 상태의 배경색 */
+}
+
+.contact-contact-section .checkbox-group input[type="checkbox"]:checked::before {
+    content: ""; /* 체크 표시 */
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #045193; /* 체크 표시의 색상 */
+    position: absolute; /* 부모(체크박스) 기준 위치 조정 */
+    top: 50%; /* 부모의 수직 중앙 */
+    left: 50%; /* 부모의 수평 중앙 */
+    transform: translate(-50%, -50%); /* 정확히 중앙으로 이동 */
+}
+
+.contact-contact-section .checkbox-item {
+    margin: 10px 0;
+    align-items: center;
+}
+
+.contact-contact-section .checkbox-item label{
+    color: #436695;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 166.622%;
+    cursor: pointer; /* 클릭 가능한 커서로 변경 */
+}
+
+.contact-contact-section .submit-btn {
+    background-color: #1a4b8c;
+    padding: 23px 50px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    color: #FFF;
+    font-family: "Heiti SC";
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 50px;
+}
+
+.contact-contact-section .submit-btn:hover {
+    background-color: #15407a;
+}
+
+.contact-contact-section .form-footer-text {
+    margin: 100px 0px;
+    text-align: center; /* 텍스트 중앙 정렬 */
+    font-size: 49px; /* 글자 크기 */
+    font-family: Pretendard;
+    line-height: normal; /* 줄 간격 */
+    font-weight: 500; /* 텍스트 굵게 */
+    background: linear-gradient(to right, #00437C, #3F8CD3, #E5FF53); /* 그라데이션 색상 */
+    -webkit-background-clip: text; /* 텍스트에만 배경색 적용 */
+    background-clip: text; /* 텍스트에만 배경색 적용 */
+    color: transparent; /* 투명 텍스트로 설정 */
+}
+
+@media (max-width: 768px) {
+    .contact-contact-section .name-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

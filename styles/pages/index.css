@@ -1,0 +1,813 @@
+/* hero */
+.index-hero {
+    margin-bottom: 200px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column; /* 내부 요소를 세로로 정렬 */
+    gap: 20px; /* 요소 사이의 간격을 20px로 설정 */
+    padding: 0px 50px;
+}
+
+.index-hero .hero-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden; /* 이미지가 컨테이너를 벗어나지 않도록 */
+    position: relative;
+    gap: 25px;
+}
+
+.index-hero .hero-text {
+    flex-shrink: 0; /* 텍스트가 줄어들지 않도록 설정 */
+    flex-grow: 1; /* hero-text가 필요한 만큼 공간을 차지 */
+    max-width: 70%;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 수직 가운데 정렬 */
+}
+
+.index-hero .hero-text.row {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.index-hero .hero-title {
+    color: #000;
+    font-family: "Helvetica Neue" !important;
+    font-size: 8vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+    flex-shrink: 0; /* 글씨 크기가 줄어들지 않도록 설정 */
+}
+
+.index-hero .hero-image {
+    width: 100%;
+    height: 140px;
+    flex-grow: 1; /* 남는 공간을 차지 */
+    flex-shrink: 1; /* 공간이 부족할 경우 줄어들도록 설정 */
+    object-fit: cover; /* 이미지가 컨테이너에 꽉 차도록 조정 */
+}
+
+.index-hero .hero-description {
+    color: #000;
+    font-family: Pretendard;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    display: inline-block;
+    line-height: 160.379%;
+    max-width: 300px; /* 최대 너비 제한 */
+    word-wrap: break-word; /* 단어 내에서 줄바꿈 */
+    white-space: normal; /* 줄바꿈 허용 */
+}
+
+@media (max-width: 768px) {
+    .index-hero .hero-container {
+        flex-direction: column;
+        height: fit-content;
+        align-items: start;
+    }
+
+    .index-hero .hero-title {
+        margin-left: 0px;
+        font-size: 13vw;
+    }
+
+    .index-hero .hero-image {
+        order: 1; /* 첫 번째 */
+        height: 50px;
+    }
+
+    .index-hero .hero-text {
+        order: 2; /* 두 번째 */
+        align-items: start;
+        max-width: 100%;
+    }
+
+    .index-hero .hero-text.row {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* introduce */
+.index-introduce {
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.index-introduce h1 {
+    color: transparent;
+    font-family: "Heiti SC";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: linear-gradient(135deg, #00437C 0%, #3F8CD3 42%, #E5FF53 100%); /* 원하는 그라데이션 색상 지정 */
+    -webkit-background-clip: text; /* 텍스트에만 배경색 적용 */
+    background-clip: text; /* 텍스트에만 배경색 적용 */
+    background-size: 100% 180%;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.index-introduce p {
+    max-width: 100%;
+    color: #5882A7;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 50px;
+    padding: auto 50px;
+    word-wrap: break-word; /* 단어를 분리하여 줄바꿈 */
+    overflow-wrap: break-word; /* 최신 브라우저에서도 적용 */
+    white-space: normal; /* 텍스트 줄바꿈을 허용 */
+}
+
+.index-introduce p strong {
+    color: #003F75;
+    font-family: Pretendard;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.index-introduce img {
+    /* max-width: 530px; */
+    width: 50%;
+    object-fit: cover;
+    margin-bottom: 40px;
+}
+
+.index-introduce h5 {
+    color: #5882A7;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 90px;
+}
+
+@media (max-width: 768px) {
+    .index-introduce h1 {
+        max-width: 100%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
+    }
+}
+
+/* card introduce */
+.index-card-introduce {
+    display: flex;
+    height: 550px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 70px;
+    background-color: #E8F6FF;
+    position: relative; /* 이미지 배치용 */
+    overflow: hidden; /* 이미지가 영역 밖으로 나가지 않도록 */
+    margin-bottom: 150px;
+}
+
+.index-card-introduce::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../../resources/img/background_circle.png"); /* 배경 이미지 경로 */
+    background-repeat: no-repeat;
+    background-size: auto 160%; /* 높이를 140%로 설정하고, 비율 유지 */
+    background-position: center; /* 이미지를 중앙 정렬 */
+    width: 100%; /* 부모 요소의 너비에 맞춤 */
+    height: 100%; /* 부모 요소의 높이에 맞춤 */
+    opacity: 1; /* 투명도 */
+    pointer-events: none; /* 클릭 불가능 */
+    z-index: 0; /* 텍스트 아래 배치 */
+}
+
+.index-card-introduce .ci-text-section p {
+    max-width: 500px;
+    color: #436695;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 240%;
+}
+
+.index-card-introduce .ci-text-section p span {
+    color: #436695;
+    font-family: Pretendard;
+    font-style: normal;
+    font-weight: 800;
+}
+
+.index-card-introduce .ci-text-section strong {
+    color: #003665;
+    font-family: Pretendard;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.index-card-introduce .ci-card-section {
+    height: 550px; /* 보여줄 영역의 높이 설정 */
+    overflow: hidden; /* 영역 밖의 이미지는 숨김 */
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.index-card-introduce .ci-card-container {
+    display: flex;
+    flex-direction: column;
+    animation: infiniteScrollUp 25s var(--_animation-direction, forwards) linear infinite; /* 애니메이션 설정 */
+}
+
+.index-card-introduce .ci-card {
+    margin-bottom: 10px; /* 카드 간 간격 */
+}
+
+.index-card-introduce .ci-card img {
+    height: 280px;
+}
+
+.index-card-introduce .ci-card-container[data-direction="down"] {
+    --_animation-direction: reverse;
+}
+
+.index-card-introduce .ci-card-container[data-direction="up"] {
+    --_animation-direction: forwards;
+}
+
+@keyframes infiniteScrollUp {
+    to {
+        transform: translateY(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .index-card-introduce {
+        flex-direction: column;
+        height: fit-content;
+        gap: 50px;
+    }
+}
+
+/* company overview */
+.index-company-overview {
+    background: linear-gradient(155deg, #0E1F26 54.45%, #34728C 98.22%);
+    color: white;
+    text-align: center;
+    padding: 50px 0px 130px 0px;
+    margin-bottom: 350px;
+}
+
+.index-company-overview .overview-header {
+    margin-bottom: 50px;
+}
+
+.index-company-overview .overview-header h2 {
+    color: #FFF;
+    font-family: Pretendard;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+.index-company-overview .overview-header p {
+    font-size: 1.2rem;
+    color: #E9E9E9;
+    font-family: Pretendard;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.index-company-overview .overview-header strong {
+    font-size: 1.2rem;
+    color: #90BFFF;
+    font-family: Pretendard;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.index-company-overview .factory-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.index-company-overview .factory-section .factory-card {
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+}
+
+.index-company-overview .factory-section .factory-card .factory-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.index-company-overview .factory-section .factory-header {
+    padding: 0px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.index-company-overview .factory-section .factory-number {
+    color: #FFF;
+    font-family: Helvetica;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.index-company-overview .factory-section .factory-number .right-icon {
+    width: 35px;
+    margin-right: 20px;
+}
+
+.index-company-overview .factory-section .factory-header h4 {
+    color: #FFF;
+    font-family: Helvetica;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.index-company-overview .factory-section .factory-header h3 {
+    color: #FFF;
+    font-family: Helvetica;
+    font-size: 24.807px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.index-company-overview .factory-section .factory-info-section {
+    padding: 20px;
+    display: flex;
+    align-items: flex-start; /* 왼쪽 선과 내용 정렬 */
+    gap: 20px;
+    min-height: 300px;
+}
+
+.index-company-overview .factory-section .info-content {
+    flex: 1; /* 콘텐츠가 남은 공간을 차지 */
+}
+
+.index-company-overview .factory-section .factory-info h5 {
+    color: #90BFFF;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.index-company-overview .factory-section .factory-info p {
+    color: #FFF;
+font-family: Inter;
+font-size: 12.5px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%;
+}
+
+.index-company-overview .factory-section .factory-info strong {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 12.5px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.index-company-overview .factory-section .factory-info span {
+    display: inline;
+    color: #90BFFF;
+    font-family: Inter;
+    font-size: 12.5px;
+    font-style: normal;
+    font-weight: 700;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+/* division (사업부) */
+.index-division-slider-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0px;
+    text-align: center;
+    font-family: Pretendard;
+    color: #333;
+    margin-bottom: 150px;
+}
+
+.index-division-slider-section .division-header {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between; /* 좌우로 배치 */
+    align-items: flex-start; /* 수직 정렬 */
+    gap: 20px;
+    text-align: left;
+}
+
+.index-division-slider-section .division-header-text {
+    max-width: 100%;
+    flex: 1; /* 남은 공간을 채우도록 설정 */
+    margin-bottom: 20px;
+}
+
+.index-division-slider-section .division-header-text h1 {
+    max-width: 100%;
+    margin-bottom: 20px;
+    color: #000;
+    font-family: Pretendard;
+    font-size: 37.5px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 113.333%;
+}
+
+.index-division-slider-section .division-header-text p {
+    max-width: 100%;
+    color: #727272;
+    font-family: Pretendard;
+    font-size: 17.5px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.index-division-slider-section .division-header-text strong {
+    color: #727272;
+    font-family: Pretendard;
+    font-size: 17.5px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+@media (max-width: 768px) {
+    .index-division-slider-section .division-header {
+        flex-direction: column;
+    }
+    .index-division-slider-section .more-button {
+        margin-top: 0px;
+    }
+
+    .index-division-slider-section .division-header-text h1 {
+        max-width: 100%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
+    }
+}
+
+/* future vision */
+.index-future-vision-section {
+    background: linear-gradient(155deg, #0E1F26 54.45%, #34728C 98.22%);
+    color: #ffffff;
+    font-family: Pretendard;
+}
+
+.index-future-vision-section .vision-banner {
+    position: relative;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.index-future-vision-section .vision-image {
+    width: 100%; /* 이미지가 부모 컨테이너 너비에 맞게 조정 */
+    height: auto; /* 이미지 비율 유지 */
+    object-fit: cover; /* 이미지가 컨테이너에 꽉 차도록 */
+}
+
+.index-future-vision-section .vision-text {
+    position: absolute;
+    bottom: 10%; /* 이미지의 하단에서부터 10% 위 */
+    left: 5%; /* 이미지의 좌측에서부터 5% 오른쪽 */
+    transform: none; /* transform 제거 */
+    color: #FFF;
+}
+
+.index-future-vision-section .vision-text h1 {
+    font-family: "Helvetica Neue";
+    font-size: 6vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.index-future-vision-section .vision-text p {
+    margin-top: 2vw;
+    color: #FFF;
+    font-family: Pretendard;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 142.81%;
+}
+
+.index-future-vision-section .vision-cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 20px 88px 15px;
+    margin-bottom: 150px;
+}
+
+.index-future-vision-section .vision-card {
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    width: calc(25% - 40px); /* 4개의 카드 배치 */
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    position: relative; /* 텍스트를 이미지 위에 겹치기 위해 추가 */
+    box-shadow: 0px 8.276px 16.552px 2.483px rgba(107, 107, 107, 0.25);
+}
+
+.index-future-vision-section .card-number {
+    background-color: #ffffff;
+    color: #000;
+    text-align: left;
+    padding: 20px 20px 20px 30px ;
+    font-family: "Helvetica Neue";
+    font-size: 56.5px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.index-future-vision-section .vision-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.index-future-vision-section .card-text {
+    position: absolute; /* 텍스트를 이미지 위에 배치 */
+    bottom: 0px; /* 텍스트가 이미지의 하단에 위치하도록 설정 */
+    width: 100%;
+    padding: 16px 14px 25px 14px;
+    border-radius: 13px;
+    text-align: left;
+    background: rgba(217, 217, 217, 0.20);
+    color: #FFF;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+}
+
+.index-future-vision-section .card-text p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .index-future-vision-section .vision-cards {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 20px 88px 15px;
+        margin-bottom: 150px;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .index-future-vision-section .vision-card {
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 450px;
+    }
+}
+
+/* collaboration */
+.index-collaboration-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.index-collaboration-section .collaboration-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 27px;
+    margin-bottom: 33px;
+}
+
+.index-collaboration-section h2 {
+    color: #004D90;
+    font-family: Helvetica;
+    font-size: 36.5px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.index-collaboration-section p {
+    color: #5882A7;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 17.5px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.index-collaboration-section strong {
+    color: #003F75;
+    font-family: Pretendard;
+    font-size: 17.5px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.index-collaboration-section img {
+    width: 100%;
+}
+
+/* News sectoin */
+.index-news-section {
+    width: 100%;
+    background-color: #102437; /* 배경색 */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.index-news-section .news-header h2 {
+    color: #FFF;
+    font-family: Pretendard;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+.index-news-section .news-division {
+    max-width: 1200px;
+}
+
+/* Contact */
+.index-contact-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-contact-section .contact-form-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    padding: 50px;
+}
+
+.index-contact-section .contact-description {
+    width: 33%;
+    text-align: left;
+}
+
+.index-contact-section #contactForm {
+    flex: 1;
+}
+
+.index-contact-section .form-subtitle {
+    font-size: 16px;
+    color: #436695;
+    line-height: 1.5;
+}
+
+.index-contact-section .form-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto; /* 버튼의 열을 유동적으로 설정 */
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.index-contact-section .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    grid-column: 1 / span 1;
+}
+
+.index-contact-section .form-input {
+    font-family: "Heiti SC";
+    font-size: 13px;
+}
+
+.index-contact-section .form-input::placeholder {
+    font-family: "Heiti SC";
+    font-size: 13px;
+}
+
+.index-contact-section .message-input {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+    height: 100%;
+    resize: none;
+    font-family: "Heiti SC";
+    font-size: 13px;
+}
+
+.index-contact-section .message-input::placeholder {
+    font-family: "Heiti SC";
+    font-size: 13px;
+}
+
+.index-contact-section .submit-btn {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 2;
+    height: 100%;
+    max-width: 100%; /* 버튼이 부모 컨테이너를 벗어나지 않도록 제한 */
+    padding: 15px;
+    background-color: #045193;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #FFF;
+    font-family: Pretendard;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 230.431%;
+}
+
+@media (max-width: 768px) {
+    .index-contact-section .form-title {
+        max-width: 100%;
+        word-wrap: break-word; /* 단어를 분리하여 줄바꿈 */
+        overflow-wrap: break-word; /* 최신 브라우저에서도 적용 */
+        white-space: normal; /* 텍스트 줄바꿈을 허용 */
+    }
+    .index-contact-section .contact-form-container {
+        flex-direction: column;
+    }
+
+    .index-contact-section .contact-description {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .index-contact-section .form-layout {
+        grid-template-columns: 1fr; /* 단일 열로 변경 */
+        grid-template-rows: auto auto auto; /* 각 항목이 한 줄씩 차지 */
+    }
+
+    .index-contact-section .message-input {
+        grid-column: 1 / span 1; /* 단일 열에 맞춤 */
+        grid-row: auto;
+    }
+
+    .index-contact-section .submit-btn {
+        grid-column: 1 / span 1; /* 단일 열에 맞춤 */
+        grid-row: auto;
+        width: 100%; /* 버튼 너비를 컨테이너에 맞춤 */
+    }
+}

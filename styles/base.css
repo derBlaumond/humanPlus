@@ -1,0 +1,29 @@
+.language-switcher {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: all 0.3s ease;
+}
+
+.language-switcher:hover {
+    border-color: #666;
+}
+
+.language-switcher:focus {
+    outline: none;
+    border-color: #0066cc;
+    box-shadow: 0 0 0 2px rgba(0,102,204,0.2);
+}
+
+@media (max-width: 768px) {
+    .language-switcher {
+        margin-right: 10px;
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+} 

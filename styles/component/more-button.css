@@ -1,0 +1,63 @@
+
+.more-button {
+    margin-top: 40px;
+    display: inline-flex; /* 텍스트와 이미지 나란히 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    justify-content: center;
+    font-family: Pretendard;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 15px 30px; /* 버튼 내부 여백 */
+    border-radius: 10px; /* 둥근 모서리 */
+    cursor: pointer; /* 마우스 커서 변경 */
+    transition: background-color 0.3s ease; /* 호버 효과 전환 */
+}
+
+.more-button .more-button-text {
+    margin-right: 10px; /* 텍스트와 화살표 간 간격 */
+}
+
+.more-button .more-button-icon {
+    width: 16px; /* 화살표 이미지 너비 */
+    height: auto; /* 비율 유지 */
+}
+
+.more-button.blue {
+    background: #045193;
+    color: #FFF;
+}
+
+
+.more-button.blue:hover {
+    background-color: white; /* 배경색 변경 */
+    color: #1A4280; /* 텍스트 색상 변경 */
+    border: 2px solid #045193;
+}
+
+.more-button.blue:hover .more-button-icon {
+    content: url('../../resources/icon/right-arrow-blue.png');
+}
+
+.more-button.white {
+    background-color: white;
+    color: #045193; /* 텍스트 색상 */
+}
+
+.more-button.white:hover {
+    background-color: #045193; /* 배경색 변경 */
+    color: #FFFFFF; /* 텍스트 색상 변경 */
+}
+
+.more-button.white:hover .more-button-icon {
+    content: url('../../resources/icon/right-arrow-white.png');
+}
+
+.more-button.blue-outline {
+    border: 2px solid #045193;
+}
+
+.more-button.blue-outline:hover {
+    border: 2px solid white;
+}

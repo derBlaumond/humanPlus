@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Plus</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <link rel='stylesheet' href='https://codepen.io/kevinpowell/pen/BavZQjN/9451cb2bddcecda34df2a0f718703cbc.css'>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <a href="index.html"><div class="navbar-logo">Human Plus. Co. Ltd</div></a>
+            <div class="navbar-right">
+                <ul class="nav-links">
+                    <li><a href="technology.html">TECHNOLOGY</a></li>
+                    <li><a href="news.html">MEDIA</a></li>
+                    <li><a href="history.html"><strong>ABOUT</strong></a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <select class="language-switcher" aria-label="Select Language">
+                    <option value="ko">한국어</option>
+                    <option value="en">English</option>
+                    <option value="ja">日本語</option>
+                    <option value="zh">中文</option>
+                    <option value="de">Deutsch</option>
+                    <option value="fr">Français</option>
+                </select>
+            </div>
+            <div class="navbar-menu-toggle">
+                <span class="navbar-menu-text">menu</span>
+                <div class="navbar-menu-icon">
+                    <img src="resources/icon/menu.png" alt="menu" height="12px"/>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="navbar-menu-overlay">
+        <div class="navbar-overlay-content">
+            <ul class="navbar-menu-links">
+                <li><a href="technology.html">TECHNOLOGY</a></li>
+                <li><a href="news.html">MEDIA</a></li>
+                <li><a href="history.html">ABOUT</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="history-hero random-history-hero fade-in">
+        <h1 class="curtain-reveal">Company History</h1>
+        <p class="fade-in" style="animation-delay: 2000ms;">About Human Plus</p>
+    </section>
+
+    <!-- 텍스트 섹션 -->
+    <section class="history-content-section" id="history-content">
+
+        <div class="history-divider fade-in"></div>
+
+        <div data-i18n="history-content-random-title" class="history-content-title slide-up">
+            Human Plus is global Based on trust, <br>
+            Leading with customer-oriented technology <br>
+            and detailed process management
+        </div>
+
+        <p data-i18n="history-content-text" class="history-content-text fade-in" style="animation-delay: 400ms;">
+            휴먼플러스는 정밀 제조와 품질 혁신으로, 글로벌 자동차 산업에서 믿음직한 파트너로 자리 잡았습니다.<br>
+            1999년 설립 이후 자동차 천장재, 부품, 베어링 부품 등을 제조하며 <br>
+            쌓아온 기술력과 품질 관리 능력은 세계 유수 자동차 제조업체들로부터 높은 신뢰를 얻고 있습니다.
+        </p>
+
+        <!-- 이미지 섹션 -->
+        <div class="history-image-section random-history-image fade-in"></div>
+
+        <!-- 이상한 동그란 원이랑 선 섹션 -->
+        <img class="history-circle-gradient-line fade-in" src="resources/icon/circle-gradient-line.png"></div>
+
+        <!-- 태그 섹션 -->
+        <div class="scroller history-tag-section" data-direction="right" data-speed="fast">
+            <div class="history-tag-container scroller__inner">
+                <div data-i18n="history-tag-1" class="history-tag"># 정밀제조</div>
+                <div data-i18n="history-tag-2" class="history-tag"># 신뢰받는제조</div>
+                <div data-i18n="history-tag-3" class="history-tag"># 글로벌파트너</div>
+                <div data-i18n="history-tag-4" class="history-tag"># 기술혁신</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 회사 개요 섹션 -->
+    <section class="history-company-overview">
+        <div class="overview-header fade-in">
+            <hr />
+            <h1 data-i18n="history-company-overview-title">회사 개요</h1>
+            <p data-i18n="history-company-overview-description">HUMAN PLUS는 3가지의 구역으로 나누어 운영하고 있습니다</p>
+        </div>
+
+        <div class="factory">
+            <img src="resources/img/overview-대구공장.png" alt="대구 공장 이미지" class="factory-image random-company-overview-1 slide-up">
+            <div class="factory-info fade-in" style="animation-delay: 400ms;">
+                <div class="info-line-horizontal right">
+                    <div class="info-circle-horizontal right"></div>
+                </div>
+                <h2 data-i18n="history-factory-info-title-1">대구 공장 - 전자사업부</h2>
+                <p data-i18n="history-factory-info-description-1">
+                    최신 전장 기술과 체계적인 생산 시스템<br><br>
+                    주소<br>
+                    대구광역시 달서구 성서공단남로 23길 21<br><br>
+                    주요 생산품<br>
+                    도어 해치, 탱크로 해치, 콘드로 하우징, 파워테일 해치 등<br><br>
+                    주요 생산 캐파<br>
+                    스위치 하네스 어셈블리 : 연 300만개<br>
+                    ECU 어셈블리 : 연 18만개<br>
+                </p>
+            </div>
+        </div>
+    
+        <div class="factory">
+            <div class="factory-info right fade-in" style="animation-delay: 400ms;">
+                <div class="info-line-horizontal left">
+                    <div class="info-circle-horizontal left"></div>
+                </div>
+                <h2 data-i18n="history-factory-info-title-2">구미 공장 - 전자사업부</h2>
+                <p data-i18n="history-factory-info-description-2">
+                    스마트 생산 공정과 정밀 전자 부품 제조<br><br>
+                    주소<br>
+                    경상북도 칠곡군 석적읍 3공단 1로 86-20<br><br>
+                    주요 생산품<br>
+                    HEV 오일 펌프 컨트롤 유닛, LPI 드라이버, ACV 커버 등<br><br>
+                    주요 생산 캐파<br>
+                    오일 펌프 유닛 : 연 60만개<br>
+                    LPI 드라이버 : 연 15만개<br>
+                </p>
+            </div>
+            <img src="resources/img/overview-구미공장.png" alt="구미 공장 이미지" class="factory-image random-company-overview-2 slide-up">
+        </div>
+    
+        <div class="factory">
+            <img src="resources/img/overview-경산공장.png" alt="경산 공장 이미지" class="factory-image random-company-overview-3 slide-up">
+            <div class="factory-info fade-in" style="animation-delay: 400ms;">
+                <div class="info-line-horizontal right">
+                    <div class="info-circle-horizontal right"></div>
+                </div>
+                <h2 data-i18n="history-factory-info-title-3">경산 공장 - CNC 사업부</h2>
+                <p data-i18n="history-factory-info-description-3">
+                    고정밀 CNC 가공 기술과 첨단 자동화 설비<br><br>
+                    주소<br>
+                    경상북도 경산시 6공단 9로<br><br>
+                    주요 생산품<br>
+                    Φ32, 31, 26 RSTM 하우징, 푸조린, 핀컨넥, 스페이서 등<br><br>
+                    주요 생산 설비<br>
+                    생산설비 : 104대<br>
+                    검사설비 : 35대<br>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 회사 연혁 섹션 -->
+    <section class="history-timeline">
+        <div class="timeline-header fade-in">
+            <hr />
+            <p data-i18n="history-timeline-title">회사 연혁<br><span>(Company History)</span></p>
+        </div>
+        <img src="resources/img/연혁-electronic-division.png" alt="electronics-division" class="responsive-image fade-in electronics-history-img">
+        <img src="resources/img/연혁-cnc-division.png" alt="cnc-division" class="responsive-image fade-in cnc-history-img">
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-basic-info">
+                <p class="footer-contact">
+                    TEL. 053 - 710 - 2030<br>
+                    FAX. 053 - 852 - 2031<br>
+                    MOBILE. 010 - 5213 - 3836<br>
+                    ADRESS. 경북 경산시 진량읍 공단 9로 6
+                </p>
+                <ul class="footer-links">
+                    <!-- <li><a href="#">이용약관</a></li> -->
+                    <li><a href="contact.html">문의하기</a></li>
+                    <li><a href="history.html">더 알아보기</a></li>
+                    <!-- <li><a href="#">개인정보처리방침</a></li> -->
+                </ul>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-company-info">
+                <p class="footer-company">
+                    <strong>Human Plus. Co. Ltd</strong><br>
+                    <a href="mailto:hpcnc1@nate.com">hpcnc1@nate.com</a>
+                </p>
+                <div class="footer-logo">
+                    <img src="resources/img/human-plus-logo-white.png" alt="Human Plus Logo">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="scripts/base/navbar.js"></script>
+    <script src="scripts/pages/history.js"></script>
+    <script src="scripts/base/animation.js"></script>
+    <script src="scripts/base/text-insert.js"></script>
+    <script src="scripts/base/content-manager.js"></script>
+</body>
+</html>

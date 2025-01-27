@@ -1,0 +1,61 @@
+.contact-form-container {
+    background: linear-gradient(135deg, #D4EBF8 0%, #E0F3DE 100%);
+    padding: 40px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.form-title {
+    color: transparent; /* 텍스트를 투명하게 만듦 */
+    font-family: "Heiti SC";
+    font-size: 49px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #00437C 0%, #3F8CD3 42%, #E5FF53 100%); /* 원하는 그라데이션 색상 지정 */
+    -webkit-background-clip: text; /* 텍스트에만 배경색 적용 */
+    background-clip: text; /* 텍스트에만 배경색 적용 */
+    background-size: 100% 180%;
+    display: inline-block;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #436695;
+    -webkit-text-stroke-width: 0.699999988079071;
+    -webkit-text-stroke-color: #436695;
+    font-family: "Heiti SC";
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 141.806%;
+}
+
+.form-input {
+    width: 100%;
+    padding: 23px 29px;
+    border: 0px solid #ddd;
+    border-radius: 33px;
+    font-family: Pretendard;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 144.889%;
+}
+
+.form-input::placeholder {
+    color: rgba(67, 102, 149, 0.35);
+    font-family: Pretendard;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 144.889%;
+}
+
+.message-input {
+    height: 120px;
+    resize: none;
+}

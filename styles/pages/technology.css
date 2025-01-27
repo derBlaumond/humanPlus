@@ -1,0 +1,546 @@
+/* hero */
+.technology-hero {
+    margin-top: 100px;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    overflow: visible;
+    height: 35vw;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.technology-hero .hero-description {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 10%;
+    left: 2%;
+}
+
+.technology-hero .hero-description .hero-title {
+    color: #000;
+    font-family: "Helvetica Neue";
+    font-size: 6vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    float: left;
+    z-index: 2;
+}
+
+.technology-hero .hero-description p {
+    color: #000;
+    margin-top: 2.5vw;
+    margin-left: 1.2vw;
+    font-family: Pretendard;
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160.379%;
+    float: left;
+    z-index: 2;
+}
+
+.technology-hero .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 20px;
+    z-index: -2;
+    position: absolute;
+    right: 5%;
+    width: 75%;
+}
+
+.technology-hero .image-grid img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -2;
+    object-fit: cover;
+}
+
+/* Main Facility */
+.technology-main-facility {
+    margin-top: 250px;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff; /* 배경색 */
+    box-sizing: border-box;
+}
+
+.technology-main-facility .title {
+    font-family: "Heiti SC";
+    font-size: 6vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 126.214%;
+    background: linear-gradient(92deg, #00437C -8.28%, #3F8CD3 56.15%, #E5FF53 144.07%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent; /* 투명 텍스트 */
+    margin-bottom: 1.6vw;
+}
+
+.technology-main-facility .subtitle {
+    color: #717171;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 125%;
+    margin-bottom: 2vw;
+}
+
+.technology-main-facility .description {
+    color: #717171;
+    font-family: Pretendard;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    margin-bottom: 2vw;
+}
+
+.technology-main-facility .description strong {
+    color: #717171;
+    font-family: Pretendard;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+}
+
+.technology-main-facility .divider {
+    width: 80px;
+    height: 3px;
+    margin: 0 auto;
+    background: linear-gradient(90deg, #327DC1 0.24%, #F1FFA1 261.28%);
+}
+
+/* Electronics hero */
+.technology-division-hero {
+    position: relative;
+    width: 100%;
+    height: 60vw;
+    overflow: hidden;
+}
+
+.technology-division-hero .background-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../resources/img/electronics-division-banner.png'); /* 이미지 경로 설정 */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end; /* 텍스트를 하단에 정렬 */
+    justify-content: flex-start; /* 텍스트를 왼쪽에 정렬 */
+}
+
+.technology-division-hero .text-overlay {
+    padding: 4vw;
+    color: white;
+    max-width: 100%;
+}
+
+.technology-division-hero .section-title {
+    max-width: 100%;
+    color: #FFF;
+    font-family: Pretendard;
+    font-size: 4.5vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 111%;
+    margin-bottom: 20px;
+}
+
+.technology-division-hero .section-description {
+    margin-top: 10px;
+    color: #FFF;
+    font-family: Pretendard;
+    font-size: 2.2vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.technology-division-hero .section-description strong{
+    font-weight: 00;
+}
+
+/* Electronics Introduce */
+.technology-introduce {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    background: linear-gradient(155deg, #0E1F26 54.45%, #34728C 98.22%);
+    justify-items: center;
+    align-items: center;
+}
+
+.technology-introduce .circle-divider {
+    padding: 130px 0px;
+}
+
+.technology-introduce .circle-divider img {
+    max-width: 50%;
+    object-fit: contain;
+}
+
+.technology-introduce .production-lines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.technology-introduce .production-line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
+    gap: 35px;
+}
+
+.technology-introduce .production-line-content {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-height: 100%;
+}
+
+.technology-introduce .production-line-image {
+    max-width: 40%;
+    padding: 0; /* 여백 제거 */
+    margin: 0; /* 여백 제거 */
+}
+
+.technology-introduce .production-line-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.technology-introduce .info-line {
+    height: 275px; /* 섹션 높이에 맞춤 */
+}
+
+.technology-introduce .production-line-text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    gap: 50px;
+}
+
+.technology-introduce .production-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.technology-introduce .production-list p {
+    color: #FFF;
+    font-family: Pretendard;
+    font-size: 1.6vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 246.363%; /* 246.363% */
+}
+
+.technology-introduce .production-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.technology-introduce .subtitle {
+    color: #FFF;
+    font-family: Pretendard;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.technology-introduce .production-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.8;
+}
+
+
+@media (max-width: 768px) {
+    .technology-introduce .production-line {
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+    }
+
+    .technology-introduce .production-line-image {
+        order: 1; /* 첫 번째 */
+        max-width: 70%;
+    }
+
+    .technology-introduce .production-line-content {
+        order: 2; /* 두 번째 */
+        max-width: 70%;
+    }
+
+    .technology-introduce .subtitle {
+        font-size: 4.5vw;
+    }
+
+    .technology-introduce .production-list p {
+        font-size: 2.5vw;
+    }
+}
+
+
+/* Electronics slider */
+.technology-introduce .major-product-slider-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
+.technology-introduce .major-product-slider-section .division-header h1 {
+    max-width: 100%;
+    margin-bottom: 20px;
+    color: #FFF;
+    font-family: Pretendard;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 141.667%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Electronics Major Customer */
+.technology-introduce .major-customers {
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* 타이틀과 부제목 */
+.technology-introduce .customers-header {
+    margin-bottom: 40px;
+}
+
+.technology-introduce .customers-title {
+    text-align: center;
+    font-family: "Heiti SC";
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 126.214%;
+    background: linear-gradient(92deg, #FFF -5%, #3F8CD3 56.15%, #E5FF53 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.technology-introduce .customers-subtitle {
+    color: #FFF;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 163.158%;
+}
+
+.technology-introduce .customers-subtitle strong {
+    font-weight: 600;
+}
+
+.technology-introduce .gradient-line-divider {
+    width: 95px;
+}
+
+.technology-introduce .customers-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.technology-introduce .customer-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 8.276px 16.552px 2.483px rgba(107, 107, 107, 0.25);
+    padding: 20px 30px;
+    min-height: 450px;
+    min-width: 310px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: start;
+}
+
+.technology-introduce .customer-card-small {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 8.276px 16.552px 2.483px rgba(107, 107, 107, 0.25);
+    padding: 20px 30px;
+    min-height: 307px;
+    min-width: 310px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: start;
+}
+
+.technology-introduce .customer-logo {
+    display: block;
+    max-width: 200px;
+    height: 90px;
+    /* object-fit: scale-down; */
+}
+
+.technology-introduce .customer-logo-small {
+    display: block;
+    max-width: 200px;
+    object-fit: scale-down;
+    height: 40px;
+}
+
+.technology-introduce .customer-divider {
+    background: #E1E1E1;
+    width: 100%;
+    height: 1.3px;
+    padding: 0px 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.technology-introduce .customer-name {
+    color: #999;
+    font-family: Pretendard;
+    font-size: 17.5px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.technology-introduce .customer-products-container {
+    display: flex;
+    gap: 30px;
+}
+
+.technology-introduce .customer-products {
+    color: #000;
+    font-family: Pretendard;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #333;
+    display: flex;
+    flex-direction: column; /* 세로 방향 정렬 */
+    gap: 20px; /* 요소 간 간격 */
+}
+
+/* Electronics certificate */
+.technology-certificate-section {
+    margin-top: 150px;
+    margin-bottom: 100px;
+    position: relative;
+    text-align: center;
+}
+
+.technology-certificate-section .certificate-header h2 {
+    color: #000;
+    font-family: Pretendard;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.technology-certificate-section .certificate-header p {
+    color: #8B8B8B;
+    font-family: Pretendard;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 151.515%;
+    margin-bottom: 50px;
+}
+
+.technology-certificate-section .certificate-container {
+    position: relative;
+    display: flex;
+    margin-top: 20px;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.technology-certificate-section .certificate-container.center {
+    justify-content: center;
+}
+
+.technology-certificate-section .certificate-container.left {
+    justify-content: flex-start; 
+}
+
+.technology-certificate-section .certificate-container.right {
+    justify-content: flex-end; 
+}
+
+.technology-certificate-section .certificate-background {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80%; /* 남색 배경이 하단 절반만 차지하도록 설정 */
+    background-color: #214858; /* 남색 */
+    z-index: 1;
+}
+
+.technology-certificate-section .certificate-images {
+    position: relative;
+    display: flex;
+    gap: 23px; /* 이미지 간 간격 */
+    z-index: 2; /* 이미지가 배경 위에 오도록 설정 */
+    margin-top: 15px;
+    margin: 15px 30px 50px 30px;
+}
+
+.technology-certificate-section .certificate-images img {
+    background-color: lightgray;
+    width: 200px; /* 이미지 너비 */
+    height: auto; /* 이미지 높이에 맞게 조정 */
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+}
+
+
+@media (max-width: 768px) {
+    .technology-certificate-section .certificate-images {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .technology-certificate-section .certificate-background {
+        height: 100%; /* 남색 배경이 하단 절반만 차지하도록 설정 */
+    }
+    
+    .technology-certificate-section .certificate-container.left {
+        justify-content: center;
+    }
+    
+    .technology-certificate-section .certificate-container.right {
+        justify-content: center;
+    }
+}

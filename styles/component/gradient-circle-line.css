@@ -1,0 +1,54 @@
+
+.info-line {
+    margin-top: 10px;
+    position: relative;
+    width: 2px; /* 선의 너비 */
+    background: linear-gradient(to bottom, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+    height: 300px; /* 섹션 높이에 맞춤 */
+}
+
+.info-circle {
+    position: absolute;
+    top: 0; /* 선의 상단에 위치 */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px; /* 동그라미 크기 */
+    max-width: 100%;
+    height: 8px; /* 동그라미 크기 */
+    background-color: white; /* 동그라미 색상 */
+    border-radius: 50%; /* 원형으로 만듦 */
+}
+
+.info-line-horizontal {
+    margin: 30px 10px;
+    position: relative;
+    width: 100%; /* 선의 너비 */
+    height: 2px; /* 섹션 높이에 맞춤 */
+}
+
+.info-circle-horizontal {
+    position: absolute;
+    top: 50%; /* 선의 중간에 위치 */
+    transform: translate(-50%, -50%);
+    width: 8px; /* 동그라미 크기 */
+    max-width: 100%;
+    height: 8px; /* 동그라미 크기 */
+    background-color: white; /* 동그라미 색상 */
+    border-radius: 50%; /* 원형으로 만듦 */
+}
+
+.info-line-horizontal.right{
+    background: linear-gradient(to left, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.info-circle-horizontal.right{
+    left: 100%;
+}
+
+.info-line-horizontal.left{
+    background: linear-gradient(to right, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.info-circle-horizontal.left{
+    left: 0%;
+}

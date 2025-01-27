@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="resources/img/human-plus-logo-black.png" type="image/png">
+    <title>Human Plus</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <!-- Linking SwiperJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <a href="index.html"><div class="navbar-logo">Human Plus. Co. Ltd</div></a>
+            <div class="navbar-right">
+                <ul class="nav-links">
+                    <li><a href="technology.html">TECHNOLOGY</a></li>
+                    <li><a href="news.html">MEDIA</a></li>
+                    <li><a href="history.html">ABOUT</a></li>
+                    <li><a href="contact.html"><strong>Contact</strong></a></li>
+                </ul>
+                <select class="language-switcher" aria-label="Select Language">
+                    <option value="ko">한국어</option>
+                    <option value="en">English</option>
+                    <option value="ja">日本語</option>
+                    <option value="zh">中文</option>
+                    <option value="de">Deutsch</option>
+                    <option value="fr">Français</option>
+                </select>
+            </div>
+            <div class="navbar-menu-toggle">
+                <span class="navbar-menu-text">menu</span>
+                <div class="navbar-menu-icon">
+                    <img src="resources/icon/menu.png" alt="menu" height="12px"/>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="navbar-menu-overlay">
+        <div class="navbar-overlay-content">
+            <ul class="navbar-menu-links">
+                <li><a href="technology.html">TECHNOLOGY</a></li>
+                <li><a href="news.html">MEDIA</a></li>
+                <li><a href="history.html">ABOUT</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="contact-contact-section">
+        <div class="contact-header">
+            <div class="contact-description">
+                <h1 class="contact-title fade-in" style="animation-delay: 500ms;">Contact us</h1>
+                <p data-i18n="contact-description" class="fade-in" style="animation-delay: 1500ms;">
+                    Human Plus는<br>
+                    고객과의 소통을 가장 중요하게 생각합니다<br><br>
+
+                    글로벌 신뢰를 바탕으로 앞서나가는 Human Plus는<br>
+                    언제나 여러분의 비즈니스 파트너가 될 준비가 되어있습니다
+                </p>
+            </div>
+            <div class="image-grid fade-in">
+                <img src="resources/img/contact-banner-1.png"/>
+                <img src="resources/img/contact-banner-2.png"/>
+                <img src="resources/img/contact-banner-3.png"/>
+            </div>
+        </div>
+
+        <div class="contact-form-container">
+            <h2 class="form-title fade-in">Get in Touch With Us</h2>
+            <p data-i18n="contact-form-subtitle" class="form-subtitle fade-in">
+                <strong>궁금하신 사항</strong>이나, <strong>협력 제안</strong>이 있으시면 언제든지 문의해주세요<br>여러분의 의견을 기다리고 있습니다!
+            </p>
+
+            <form id="contactForm" method="POST" action="https://script.google.com/macros/s/AKfycbweK1MDQBmEX_jfqOyJgfDAU8tQ5GRg1iNvySuYelHDra50f7RgsDe3In5MOFRGaAYzqw/exec">
+                <div class="form-group fade-in">
+                    <label class="form-label">Name</label>
+                    <div class="name-group">
+                        <input type="text" class="form-input" name="firstName" placeholder="First Name" required>
+                        <input type="text" class="form-input" name="lastName" placeholder="Last Name" required>
+                    </div>
+                </div>
+
+                <div class="form-group fade-in">
+                    <label class="form-label">E-mail</label>
+                    <input type="email" class="form-input" name="email" placeholder="example@domain.com" required>
+                </div>
+
+                <div class="checkbox-group fade-in">
+                    <label class="form-label">Check Box</label>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="product" name="category" value="product">
+                        <label for="product">Product</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="partnership" name="category" value="partnership">
+                        <label for="partnership">Partnership</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="other" name="category" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+
+                <script>
+                    document.querySelectorAll('.checkbox-group input[type="checkbox"]').forEach((checkbox) => {
+                        checkbox.addEventListener('change', function () {
+                            if (this.checked) {
+                                // 다른 모든 체크박스의 선택을 해제
+                                document.querySelectorAll('.checkbox-group input[type="checkbox"]').forEach((box) => {
+                                    if (box !== this) {
+                                        box.checked = false;
+                                    }
+                                });
+                            }
+                        });
+                    });
+                </script>
+
+                <div class="form-group fade-in">
+                    <label class="form-label">Company Name</label>
+                    <input type="text" class="form-input" name="company">
+                </div>
+
+                <div class="form-group fade-in">
+                    <label class="form-label">Message</label>
+                    <textarea class="form-input message-input" name="message" required></textarea>
+                </div>
+
+                <button type="submit fade-in" class="submit-btn">SEND</button>
+                <p data-i18n="contact-form-footer-text" class="form-footer-text fade-in">함께 미래를 만들어가는 첫걸음<br>Human Plus가 함께합니다</p>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-basic-info">
+                <p class="footer-contact">
+                    TEL. 053 - 710 - 2030<br>
+                    FAX. 053 - 852 - 2031<br>
+                    MOBILE. 010 - 5213 - 3836<br>
+                    ADRESS. 경북 경산시 진량읍 공단 9로 6
+                </p>
+                <ul class="footer-links">
+                    <!-- <li><a href="#">이용약관</a></li> -->
+                    <li><a href="contact.html">문의하기</a></li>
+                    <li><a href="history.html">더 알아보기</a></li>
+                    <!-- <li><a href="#">개인정보처리방침</a></li> -->
+                </ul>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-company-info">
+                <p class="footer-company">
+                    <strong>Human Plus. Co. Ltd</strong><br>
+                    <a href="mailto:hpcnc1@nate.com">hpcnc1@nate.com</a>
+                </p>
+                <div class="footer-logo">
+                    <img src="resources/img/human-plus-logo-white.png" alt="Human Plus Logo">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!-- Custom JS -->
+    <script src="scripts/base/animation.js"></script>
+    <script src="scripts/base/navbar.js"></script>
+    <script src="scripts/base/text-insert.js"></script>
+    <script src="scripts/component/email-success.js"></script>
+    <script src="scripts/base/content-manager.js"></script>
+</body>
+</html>

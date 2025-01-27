@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="resources/img/human-plus-logo-black.png" type="image/png">
+    <title>Human Plus</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <!-- Linking SwiperJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <a href="index.html"><div class="navbar-logo">Human Plus. Co. Ltd</div></a>
+            <div class="navbar-right">
+                <ul class="nav-links">
+                    <li><a href="technology.html"><strong>TECHNOLOGY</strong></a></li>
+                    <li><a href="news.html">MEDIA</a></li>
+                    <li><a href="history.html">ABOUT</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <select class="language-switcher" aria-label="Select Language">
+                    <option value="ko">한국어</option>
+                    <option value="en">English</option>
+                    <option value="ja">日本語</option>
+                    <option value="zh">中文</option>
+                    <option value="de">Deutsch</option>
+                    <option value="fr">Français</option>
+                </select>
+            </div>
+            <div class="navbar-menu-toggle">
+                <span class="navbar-menu-text">menu</span>
+                <div class="navbar-menu-icon">
+                    <img src="resources/icon/menu.png" alt="menu" height="12px"/>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="navbar-menu-overlay">
+        <div class="navbar-overlay-content">
+            <ul class="navbar-menu-links">
+                <li><a href="technology.html">TECHNOLOGY</a></li>
+                <li><a href="news.html">MEDIA</a></li>
+                <li><a href="history.html">ABOUT</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="technology-hero">
+        <div class="hero-description">
+            <h1 class="hero-title curtain-reveal">TECHNOLOGY</h1>
+            <p class="fade-in-3" data-i18n="technology-hero-random-description">
+                고객 중심의 기술 혁신과<br>
+                정교한 공정 관리로<br>
+                제조의 표준을 만들어갑니다<br>
+            </p>
+        </div>
+        <div class="image-grid">
+            <img class="random-hero-image fade-in-3" src="random-banner/technology-hero-1.png"/>
+        </div>
+    </div>
+
+    <section class="technology-main-facility fade-in">
+        <h1 class="title">Manufacturing Technology</h1>
+        <h2 data-i18n="technology-main-facility-subtitle" class="subtitle">HUMAN PLUS의 주요 제조 시설</h2>
+        <p data-i18n="technology-main-facility-description" class="description">
+            <strong>전자 사업부</strong>와 <strong>CNC 사업부</strong>, 두 가지 전문 영역으로 나뉘어 최적의 기술력을 제공합니다
+        </p>
+        <div class="divider"></div>
+    </section>
+    
+    <!-- 전자 사업부 -->
+    <section class="technology-division-hero" id="electronics-section">
+        <div class="background-image random-electronics-image fade-in">
+            <div class="text-overlay slide-up" style="animation-delay: 300ms;">
+                <h1 data-i18n="technology-electronics-hero-title" class="section-title">전자 사업부<br>(Electronics Division)</h1>
+                <p data-i18n="technology-electronics-hero-description" class="section-description">
+                    전자사업부는 <strong>SMT 라인, PBA 납땜 라인, 로봇 납땜</strong> 등<br>
+                    첨단 생산 설비가 구축되어 있습니다.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="technology-introduce">
+        <!-- 구분자 -->
+        <div class="circle-divider fade-in">
+            <img src="resources/icon/circle-gradient-line.png" />
+        </div>
+        <!-- 생산 라인 -->
+        <div class="production-lines">
+            <!-- SMT LINE -->
+            <div class="production-line">
+                <div class="production-line-image slide-up">
+                    <img src="resources/img/electronics-production-line-1.png" alt="SMT Line" />
+                </div>
+                <div class="production-line-content fade-in" style="animation-delay: 400ms;">
+                    <div class="info-line">
+                        <div class="info-circle"></div>
+                    </div>
+                    <div class="production-line-text">
+                        <h4 class="subtitle">01 SMT LINE</h4>
+                        <div class="production-container">
+                            <div class="production-list">
+                                <p>•</p>
+                                <p data-i18n="technology-electronics-production-smt-line-1">로딩</p>
+                                <p data-i18n="technology-electronics-production-smt-line-2">2D 코드 프린팅</p>
+                                <p data-i18n="technology-electronics-production-smt-line-3">납땜 프린팅</p>
+                            </div>
+                            <div class="production-list">
+                                <p>•</p>
+                                <p data-i18n="technology-electronics-production-smt-line-4">납땜 페이스트 검사</p>
+                                <p data-i18n="technology-electronics-production-smt-line-5">마운팅 1</p>
+                                <p data-i18n="technology-electronics-production-smt-line-6">마운팅 2</p>
+                            </div>
+                            <div class="production-list">
+                                <p>•</p>
+                                <p data-i18n="technology-electronics-production-smt-line-7">리플로우</p>
+                                <p data-i18n="technology-electronics-production-smt-line-8">시각 검사</p>
+                                <p data-i18n="technology-electronics-production-smt-line-9">제품 생산</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PBA SOLDERING LINE -->
+            <div class="production-line">
+                <div class="production-line-content fade-in" style="animation-delay: 400ms;">
+                    <div class="info-line">
+                        <div class="info-circle"></div>
+                    </div>
+                    <div class="production-line-text">
+                        <h4 class="subtitle">02 PBA SOLDERING LINE</h4>
+                        <div class="production-container">
+                            <div class="production-list">
+                                <p>•</p>
+                                <p data-i18n="technology-electronics-production-pba-soldering-line-1">부품 장착</p>
+                                <p data-i18n="technology-electronics-production-pba-soldering-line-2">자동 납땜</p>
+                                <p data-i18n="technology-electronics-production-pba-soldering-line-3">ICT 검사</p>
+                            </div>
+                            <div class="production-list">
+                                <p>•</p>
+                                <p data-i18n="technology-electronics-production-pba-soldering-line-4">비전 검사기</p>
+                                <p data-i18n="technology-electronics-production-pba-soldering-line-5">메모리</p>
+                                <p data-i18n="technology-electronics-production-pba-soldering-line-6">코팅 기계</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="production-line-image slide-up">
+                    <img src="resources/img/electronics-production-line-2.png" alt="PBA SOLDERING LINE" />
+                </div>
+            </div>
+
+            <!-- Robot SOLDERING LINE -->
+            <div class="production-line">
+                <div class="production-line-image slide-up">
+                    <img src="resources/img/electronics-production-line-3.png" alt="Robot SOLDERING LINE" />
+                </div>
+                <div class="production-line-content fade-in" style="animation-delay: 400ms;">
+                    <div class="info-line">
+                        <div class="info-circle"></div>
+                    </div>
+                    <div class="production-line-text">
+                        <h4 class="subtitle">03 Robot SOLDERING LINE</h4>
+                        <div class="production-container">
+                            <div class="production-list">
+                                <p>•</p>
+                                <p data-i18n="technology-electronics-production-robot-soldering-line-1">로봇 납땜</p>
+                                <p data-i18n="technology-electronics-production-robot-soldering-line-2">정전기 검사</p>
+                                <p data-i18n="technology-electronics-production-robot-soldering-line-3">수지 처리</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 전자 사업부 주요 제품들 -->
+        <div class="major-product-slider-section">
+            <div class="division-header fade-in">
+                <h1 data-i18n="technology-electronics-major-product-title">전자 사업부 (Electronics Division)<br>주요 제품들</h1>
+            </div>
+            <div class="swiper electronics-major-product slide-up" style="animation-delay: 500ms;">
+                <div class="slider-card-container swiper-wrapper">
+                    <div class="electronics-major-product-card swiper-slide slider-card">
+                        <img class="slider-card-img" src="resources/img/electronics-division-door_latch_cover.png" alt="Door Latch Cover">
+                        <p class="slider-card-title">DOOR LATCH COVER</p>
+                        <p class="slider-card-subtitle">S/W Assembly (RJ, RG3, JX1)</p>
+                    </div>
+                    <div class="electronics-major-product-card swiper-slide slider-card active-center-card">
+                        <img class="slider-card-img" src="resources/img/electronics-division-trunk_latch_cover.png" alt="Trunk Latch Cover">
+                        <p class="slider-card-title">TRUNK LATCH COVER</p>
+                        <p class="slider-card-subtitle">S/W Assembly (RJ, RG3, JX1)</p>
+                    </div>
+                    <div class="electronics-major-product-card swiper-slide slider-card">
+                        <img class="slider-card-img" src="resources/img/electronics-division-door_latch_tml.png" alt="Door Latch TML">
+                        <p class="slider-card-title">DOOR LATCH TML</p>
+                        <p class="slider-card-subtitle">S/W Assembly (TL, QL, PD)</p>
+                    </div>
+                    <div class="electronics-major-product-card swiper-slide slider-card">
+                        <img class="slider-card-img" src="resources/img/electronics-division-bt1xx_base_guide_and_cable_sub_assembly.png" alt="BT1XX BASE GUIDE & CABLE SUB Assembly">
+                        <p class="slider-card-title">BT1XX BASE GUIDE<br>& CABLE SUB Assembly</p>
+                    </div>
+                    <div class="electronics-major-product-card swiper-slide slider-card">
+                        <img class="slider-card-img" src="resources/img/electronics-division-power_tail_latch_power_trunk.png" alt="POWER TAIL LATCH, POWER TRUNK">
+                        <p class="slider-card-title">POWER TAIL LATCH, POWER TRUNK</p>
+                        <p class="slider-card-subtitle">GATE SUB Assembly (UM, ON, J100)</p>
+                    </div>
+                    <div class="electronics-major-product-card swiper-slide slider-card">
+                        <img class="slider-card-img" src="resources/img/electronics-division-condor_housing_and_gpcb_sub_assembly.png" alt="CONDOR HOUSING & GPCB SUB Assembly (R1T)">
+                        <p class="slider-card-title">CONDOR HOUSING &<br>GPCB SUB Assembly (R1T)</p>
+                    </div>
+                    <div class="electronics-major-product-card swiper-slide slider-card">
+                        <img class="slider-card-img" src="resources/img/electronics-division-hr_car_door_latch_pcb_assembly.png" alt="HR CAR DOOR LATCH PCB Assembly">
+                        <p class="slider-card-title">HR CAR DOOR LATCH<br>PCB Assembly</p>
+                    </div>
+                    <div class="electronics-major-product-card swiper-slide slider-card">
+                        <img class="slider-card-img" src="resources/img/electronics-division-tsd_ecu.png" alt="TSD ECU">
+                        <p class="slider-card-title">TSD ECU</p>
+                    </div>
+                    <div class="electronics-major-product-card swiper-slide slider-card">
+                        <img class="slider-card-img" src="resources/img/electronics-division-lucid_gravity_door_latch.png" alt="Lucid Gravity Door Latch">
+                        <p class="slider-card-title">Lucid Gravity<br>Door Latch</p>
+                    </div>
+                    <div class="electronics-major-product-card swiper-slide slider-card">
+                        <img class="slider-card-img" src="resources/img/electronics-division-lucid_gravity_frunk_latch.png" alt="Lucid Gravity Frunk Latch">
+                        <p class="slider-card-title">Lucid Gravity<br>Frunk Latch</p>
+                    </div>
+                    <div class="electronics-major-product-card swiper-slide slider-card">
+                        <img class="slider-card-img" src="resources/img/electronics-division-hev_oil_pump_control_unit.png" alt="HEV OIL PUMP CONTROL UNIT">
+                        <p class="slider-card-title">HEV OIL PUMP CONTROL UNIT</p>
+                        <p class="slider-card-subtitle">(DN8, MQ4, GN7, TM PE, GL3)</p>
+                    </div>
+                    <div class="electronics-major-product-card swiper-slide slider-card">
+                        <img class="slider-card-img" src="resources/img/electronics-division-acv_cover_compl.png" alt="ACV COVER COMPL">
+                        <p class="slider-card-title">ACV<br>COVER COMPL</p>
+                    </div>
+                    <div class="electronics-major-product-card swiper-slide slider-card">
+                        <img class="slider-card-img" src="resources/img/electronics-division-lpi_driver.png" alt="LPI DRIVER (NQ5, PU, LF PE, DN8)">
+                        <p class="slider-card-title">LPI DRIVER (NQ5, PU, LF PE, DN8)</p>
+                    </div>
+                    <div class="electronics-major-product-card swiper-slide slider-card">
+                        <img class="slider-card-img" src="resources/img/electronics-division-e_comp_inverter.png" alt="e-Comp Inverter">
+                        <p class="slider-card-title">e-Comp Inverter</p>
+                    </div>
+                    <div class="electronics-major-product-card swiper-slide slider-card">
+                        <img class="slider-card-img" src="resources/img/electronics-division-e_comp_resolver.png" alt="e-Comp Resolver">
+                        <p class="slider-card-title">e-Comp Resolver</p>
+                    </div>
+                    <div class="electronics-major-product-card swiper-slide slider-card">
+                        <img class="slider-card-img" src="resources/img/electronics-division-digital_analog_converter.png" alt="Digital Analog Converter">
+                        <p class="slider-card-title">Digital Analog Converter</p>
+                    </div>
+                </div>
+                <div class="swiper-button-prev white">
+                </div>
+                <div class="swiper-button-next white">
+                </div>
+            </div>
+        </div>    
+
+        <!-- 주 소비자 -->
+        <div class="major-customers">
+            <div class="customers-header fade-in">
+                <h2 class="customers-title">Major Customers</h2>
+                <p data-i18n="technology-electronics-major-customers-title" class="customers-subtitle">
+                    2002년부터 <strong>모토닉</strong>, 2005년부터 <strong>평화정공 (PHA)</strong>에 납품하고 있습니다
+                </p>
+            </div>
+            <hr class="gradient-line-divider"/>
+            <div class="customers-container slide-up" style="animation-delay: 300ms;">
+                <div class="customer-card">
+                    <img src="resources/img/major-customers_motonic-logo.png" alt="Motonic Logo" class="customer-logo">
+                    <hr class="customer-divider"/>
+                    <h3 data-i18n="technology-electronics-major-customer-motonic" class="customer-name">모토닉</h3>
+                    <ul class="customer-products">
+                        <li data-i18n="technology-electronics-major-customer-motonic-product-1">OPU (OIL PUMP UNIT) <br>
+                            : 하이브리드 차종 부품</li>
+                        <li data-i18n="technology-electronics-major-customer-motonic-product-2">ACV, EEGR ASSY</li>
+                        <li data-i18n="technology-electronics-major-customer-motonic-product-3">LPI DRIVER <br>
+                            : DN8 / US4 / CN7 / IG / NQ5 models</li>
+                        <li data-i18n="technology-electronics-major-customer-motonic-product-4">LPDI DRIVER : PU / HR models</li>
+                    </ul>
+                </div>
+                <div class="customer-card">
+                    <img src="resources/img/major-customers_pha-logo.png" alt="PHA Logo" class="customer-logo">
+                    <hr class="customer-divider"/>
+                    <h3 data-i18n="technology-electronics-major-customer-pha" class="customer-name">평화정공 (PHA)</h3>
+                    <ul class="customer-products">
+                        <li data-i18n="technology-electronics-major-customer-pha-product-1">도어 래치 스위치 TML ASSY</li>
+                        <li data-i18n="technology-electronics-major-customer-pha-product-2">파워 트렁크 게이트 SUB ASSY</li>
+                        <li data-i18n="technology-electronics-major-customer-pha-product-3">트렁크 래치 커버 스위치 ASSY</li>
+                        <li data-i18n="technology-electronics-major-customer-pha-product-4">콘도르 하우징 & PCB SUB ASSY</li>
+                        <li data-i18n="technology-electronics-major-customer-pha-product-5">BT1XX 베이스 가이드 & 케이블 SUB ASSY</li>
+                        <li data-i18n="technology-electronics-major-customer-pha-product-6">TSD A-01 ECU-PSD 컨트롤러 ASSY</li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <section class="technology-certificate-section">
+        <div class="certificate-header fade-in">
+            <h2 data-i18n="technology-certificate-title">인증서</h2>
+            <p data-i18n="technology-certificate-description">HUMAN PLUS는 신뢰있는 가치를 전달합니다</p>
+        </div>
+        <div class="certificate-container center slide-up" style="animation-delay: 300ms;">
+            <div class="certificate-background"></div>
+            <div class="certificate-images">
+                <img src="resources/img/electronics-certificate1.png" alt="Certificate 1">
+                <img src="resources/img/electronics-certificate2.png" alt="Certificate 2">
+                <img src="resources/img/electronics-certificate3.png" alt="Certificate 3">
+                <img src="resources/img/electronics-certificate4.png" alt="Certificate 4">
+            </div>
+        </div>
+    </section>
+
+    <!-- CNC 사업부 -->
+    <section class="technology-division-hero" id="cnc-section">
+        <div class="background-image random-cnc-image fade-in">
+            <div class="text-overlay slide-up" style="animation-delay: 300ms;">
+                <h1 data-i18n="technology-cnc-hero-title" class="section-title">CNC 사업부<br>(CNC Division)</h1>
+                <p data-i18n="technology-cnc-hero-description" class="section-description">
+                    CNC 사업부는 2012년부터 <strong>셰플러 코리아</strong> 및<br><strong>센트랄</strong>에 납품하고 있습니다
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="technology-introduce">
+        <!-- 구분자 -->
+        <div class="circle-divider fade-in">
+            <img src="resources/icon/circle-gradient-line.png" />
+        </div>
+        <!-- CNC 사업부 주요 제품들 -->
+        <div class="major-product-slider-section">
+            <div class="division-header fade-in">
+                <h1 data-i18n="technology-cnc-major-product-title">CNC사업부 (CNC Division)<br>주요 제품들</h1>
+            </div>
+            <div class="swiper cnc-major-product slide-up" style="animation-delay: 300ms;">
+                <div class="slider-card-container swiper-wrapper">
+                    <div class="cnc-major-product-card swiper-slide slider-card">
+                        <img class="slider-card-img" src="resources/img/cnc-division_32rstm_housing.png" alt="Φ32RSTM Housing">
+                        <p class="slider-card-title">Φ32RSTM Housing</p>
+                    </div>
+                    <div class="cnc-major-product-card swiper-slide slider-card">
+                        <img class="slider-card-img" src="resources/img/cnc-division_31rstm_housing.png" alt="Φ31RSTM Housing">
+                        <p class="slider-card-title">Φ31RSTM Housing</p>
+                    </div>
+                    <div class="cnc-major-product-card swiper-slide slider-card">
+                        <img class="slider-card-img" src="resources/img/cnc-division_26rstm_housing.png" alt="Φ26RSTM Housing">
+                        <p class="slider-card-title">Φ26RSTM Housing</p>
+                    </div>
+                    <div class="cnc-major-product-card swiper-slide slider-card">
+                        <img class="slider-card-img" src="resources/img/cnc-division-inner_ring.png" alt="Inner Ring">
+                        <p class="slider-card-title">Inner Ring</p>
+                    </div>
+                    <div class="cnc-major-product-card swiper-slide slider-card">
+                        <img class="slider-card-img" src="resources/img/cnc-division_lamda_4kinds.png" alt="Lamda & 4 kinds">
+                        <p class="slider-card-title">Lamda & 4 kinds</p>
+                    </div>
+                    <div class="cnc-major-product-card swiper-slide slider-card">
+                        <img class="slider-card-img" src="resources/img/cnc-division_spacer.png" alt="spacer">
+                        <p class="slider-card-title">spacer</p>
+                    </div>
+                    <div class="cnc-major-product-card swiper-slide slider-card">
+                        <img class="slider-card-img" src="resources/img/cnc-division-ball_bearings.png" alt="Ball Bearings">
+                        <p class="slider-card-title">Ball Bearings</p>
+                    </div>
+                    <div class="cnc-major-product-card swiper-slide slider-card">
+                        <img class="slider-card-img" src="resources/img/cnc-division_cam_roller.png" alt="Cam Roller">
+                        <p class="slider-card-title">Cam Roller</p>
+                    </div>
+                    <div class="cnc-major-product-card swiper-slide slider-card">
+                        <img class="slider-card-img" src="resources/img/cnc-division_loose_lip.png" alt="Loose Lip">
+                        <p class="slider-card-title">Loose Lip</p>
+                    </div>
+                </div>
+                <div class="swiper-button-prev white">
+                </div>
+                <div class="swiper-button-next white">
+                </div>
+            </div>
+        </div>    
+
+        <!-- 주 소비자 -->
+        <div class="major-customers">
+            <div class="customers-header fade-in">
+                <h2 class="customers-title">Major Customers</h2>
+                <p data-i18n="technology-cnc-major-customers-title" class="customers-subtitle">
+                    2012년부터 <strong>셰플러 코리아 및 센트랄</strong>에 납품하고 있습니다
+                </p>
+            </div>
+            <hr class="gradient-line-divider fade-in"/>
+            <div class="customers-container slide-up" style="animation-delay: 300ms;">
+                <div class="customer-card-small">
+                    <img src="resources/img/major-customers_schaeffler-logo.png" alt="Motonic Logo" class="customer-logo-small">
+                    <hr class="customer-divider"/>
+                    <h3 data-i18n="technology-cnc-major-customer-schaeffler" class="customer-name">셰플러 코리아</h3>
+                    <div class="customer-products-container">
+                        <ul class="customer-products">
+                            <li data-i18n="technology-cnc-major-customer-schaeffler-product-1">아우터링 [캠롤러]</li>
+                            <li data-i18n="technology-cnc-major-customer-schaeffler-product-2">슬리브 : 볼젠 슬리브</li>
+                            <li data-i18n="technology-cnc-major-customer-schaeffler-product-3">플런저</li>
+                        </ul>
+                        <ul class="customer-products">
+                            <li data-i18n="technology-cnc-major-customer-schaeffler-product-4">루즈 립</li>
+                            <li data-i18n="technology-cnc-major-customer-schaeffler-product-5">RSTM 하우징</li>
+                            <li data-i18n="technology-cnc-major-customer-schaeffler-product-6">이너링</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="customer-card-small">
+                    <img src="resources/img/major-customers_ctr-logo.png" alt="PHA Logo" class="customer-logo-small">
+                    <hr class="customer-divider"/>
+                    <h3 data-i18n="technology-cnc-major-customer-ctr" class="customer-name">센트랄 코리아</h3>
+                    <ul class="customer-products">
+                        <li data-i18n="technology-cnc-major-customer-ctr-product-1">필로우볼</li>
+                        <li data-i18n="technology-cnc-major-customer-ctr-product-2">이외의 대량 생산 라인 구축</li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <section class="technology-certificate-section">
+        <div class="certificate-header fade-in">
+            <h2 data-i18n="technology-certificate-title">인증서</h2>
+            <p data-i18n="technology-certificate-description">HUMAN PLUS는 신뢰있는 가치를 전달합니다</p>
+        </div>
+        <div class="certificate-container left slide-up" style="animation-delay: 300ms;">
+            <div class="certificate-background"></div>
+            <div class="certificate-images">
+                <img src="resources/img/cnc-certificate1.png" alt="Certificate 1">
+                <img src="resources/img/cnc-certificate2.png" alt="Certificate 2">
+                <img src="resources/img/cnc-certificate3.png" alt="Certificate 3">
+            </div>
+        </div>
+        <div class="certificate-container right slide-up" style="animation-delay: 300ms;">
+            <div class="certificate-background"></div>
+            <div class="certificate-images">
+                <img src="resources/img/cnc-certificate4.png" alt="Certificate 4">
+                <img src="resources/img/cnc-certificate5.png" alt="Certificate 5">
+                <img src="resources/img/cnc-certificate6.png" alt="Certificate 6">
+            </div>
+        </div>
+    </section>    
+
+    <!-- <div class="bottom-logo fade-in">
+        <img src="resources/img/human-plus-logo-black.png" alt="Human Plus Logo">
+        <p>Human Plus. Co. Ltd</p>
+    </div> -->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-basic-info">
+                <p class="footer-contact">
+                    TEL. 053 - 710 - 2030<br>
+                    FAX. 053 - 852 - 2031<br>
+                    MOBILE. 010 - 5213 - 3836<br>
+                    ADRESS. 경북 경산시 진량읍 공단 9로 6
+                </p>
+                <ul class="footer-links">
+                    <!-- <li><a href="#">이용약관</a></li> -->
+                    <li><a href="contact.html">문의하기</a></li>
+                    <li><a href="history.html">더 알아보기</a></li>
+                    <!-- <li><a href="#">개인정보처리방침</a></li> -->
+                </ul>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-company-info">
+                <p class="footer-company">
+                    <strong>Human Plus. Co. Ltd</strong><br>
+                    <a href="mailto:hpcnc1@nate.com">hpcnc1@nate.com</a>
+                </p>
+                <div class="footer-logo">
+                    <img src="resources/img/human-plus-logo-white.png" alt="Human Plus Logo">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Linking SwiperJS script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="scripts/base/animation.js"></script>
+    <script src="scripts/base/navbar.js"></script>
+    <script src="scripts/pages/technology.js"></script>
+    <script src="scripts/base/text-insert.js"></script>
+    <script src="scripts/base/content-manager.js"></script>
+</body>
+</html>
