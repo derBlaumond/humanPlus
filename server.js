@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const cors = require('cors');
+const init = require('./scripts/init');
 require('dotenv').config();
 
 const app = express();
@@ -25,7 +26,20 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-// 서버 시작
-app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
-});
+// 서버 시작 전 초기화
+async function startServer() {
+    try {
+        // 필요한 디렉토리와 파일들 초기화
+        await init();
+        
+        // 서버 시작
+        app.listen(port, () => {
+            console.log(`Server is running on http://localhost:${port}`);
+        });
+    } catch (error) {
+        console.error('Failed to start server:', error);
+        process.exit(1);
+    }
+}
+
+startServer();
