@@ -50,25 +50,19 @@
    ```
    - 설치가 완료될 때까지 기다리기 (약 1-2분 소요)
 
-4. **환경 설정 파일 생성**
-   ```bash
-   cp .env.example .env
-   ```
-   - 맥/리눅스에서 실행. 윈도우에서는 .env.example 파일을 복사하여 .env로 이름 변경
-
-5. **API 키 설정**
+4. **API 키 설정**
    - 텍스트 에디터(메모장 등)로 .env 파일 열기
    - `OPENAI_API_KEY=your_api_key_here` 부분을 찾아
    - `your_api_key_here` 대신 복사해둔 OpenAI API 키 붙여넣기
    - 파일 저장
 
-6. **서버 실행**
+5. **서버 실행**
    ```bash
    npm start
    ```
    - "Server is running on http://localhost:3000" 메시지가 표시되면 성공
 
-7. **웹 브라우저에서 확인**
+6. **웹 브라우저에서 확인**
    - Chrome, Firefox 등의 브라우저 열기
    - 주소창에 `http://localhost:3000` 입력
    - 서버가 정상적으로 실행 중이라면 웹페이지가 표시됨

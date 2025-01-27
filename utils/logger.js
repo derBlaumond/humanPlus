@@ -8,9 +8,12 @@ const logDir = path.join(__dirname, '../logs');
 // 로그 디렉토리 생성
 async function ensureLogDirectory() {
     try {
-        await fs.access(logDir);
-    } catch {
-        await fs.mkdir(logDir);
+        await fs.mkdir(logDir, { recursive: true });
+    } catch (error) {
+        if (error.code !== 'EEXIST') {
+            console.error('Error creating logs directory:', error);
+            throw error;
+        }
     }
 }
 
