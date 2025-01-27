@@ -87,6 +87,43 @@
 - **포트 3000이 이미 사용 중이라는 에러 발생 시**
   - .env 파일에서 `PORT=3000`을 다른 번호(예: 3001)로 변경
 
+## API 키 설정 안내
+
+콘텐츠 생성을 시작하기 전에 반드시 OpenAI API 키를 설정해야 합니다:
+
+1. **`.env` 파일 생성**
+   ```bash
+   # 맥/리눅스의 경우
+   touch .env
+   
+   # 윈도우의 경우
+   type nul > .env
+   ```
+
+2. **API 키 입력**
+   - 생성된 `.env` 파일을 텍스트 에디터로 열기
+   - 다음 내용을 복사하여 붙여넣기:
+     ```
+     # OpenAI API 설정
+     OPENAI_API_KEY=your_api_key_here
+     
+     # 스케줄러 설정 (기본값: 매일 자정)
+     UPDATE_SCHEDULE=0 0 * * *
+     
+     # 서버 설정
+     PORT=3000
+     
+     # 출력 디렉토리 설정
+     OUTPUT_DIR=random-banner
+     ```
+   - `your_api_key_here` 부분을 자신의 실제 OpenAI API 키로 교체
+   - 파일 저장
+
+3. **API 키 확인**
+   - OpenAI API 키는 `sk-`로 시작하는 문자열입니다
+   - API 키를 분실했거나 잊어버린 경우 OpenAI 웹사이트에서 새로 발급받아야 합니다
+   - API 키는 절대로 GitHub 등에 공개되지 않도록 주의하세요
+
 ## 콘텐츠 생성 가이드
 
 ### 텍스트 콘텐츠 재생성
@@ -96,14 +133,14 @@
    node scripts/generate-content.js
    ```
    - 실행 후 `lang/` 디렉토리에 새로운 텍스트 파일들이 생성됨
-   - 기본적으로 영어로 생성되며, 다른 언어는 자동 번역됨
+   - 기본적으로 한국어로 생성되며, 다른 언어는 자동 번역됨
 
 2. **번역 실행 (선택사항)**
    ```bash
    node scripts/translate-content.js
    ```
    - 새로 생성된 텍스트를 다른 언어로 번역
-   - 지원 언어: 한국어, 일본어, 중국어, 영어
+   - 지원 언어: 영어, 일본어, 중국어, 독일어, 프랑스어
 
 ### 이미지 콘텐츠 재생성
 
@@ -118,7 +155,13 @@
      - `history-hero`: 연혁 페이지 히어로 이미지
      - `cnc`: CNC 관련 이미지
 
-2. **생성된 이미지 확인**
+2. **특정 타입/시리즈만 생성**
+   ```bash
+   # 예: vision-card의 2번 시리즈만 생성
+   node scripts/generate-image.js vision-card 2
+   ```
+
+3. **생성된 이미지 확인**
    - 모든 이미지는 `random-banner/` 디렉토리에 저장
    - 파일명 형식: `[type]-[series]-[number].png`
    - 예시 파일명:
@@ -128,10 +171,6 @@
      history-hero-1.png ~ history-hero-4.png
      cnc-1.png ~ cnc-4.png
      ```
-
-3. **생성 소요 시간**
-   - 전체 이미지 생성에 약 10-15분 소요
-   - DALL-E API의 속도 제한으로 인해 이미지당 약 10-15초 대기 시간 포함
 
 ### 자동 업데이트 설정
 
@@ -157,15 +196,24 @@
 ```
 humanplus_page-main/
 ├── scripts/
-│   ├── generate-image.js    # 이미지 생성
-│   ├── generate-texts.js    # 텍스트 생성
-│   └── translate-text.js    # 번역
+│   ├── generate-image.js     # 이미지 생성
+│   ├── generate-content.js   # 텍스트 생성
+│   └── translate-content.js  # 번역
 ├── utils/
 │   ├── scheduler.js         # 스케줄러
 │   ├── bannerUpdater.js     # 배너 업데이트
-│   └── languageUpdater.js   # 언어 파일 업데이트
-└── routes/
-    └── scheduler.js         # API 라우트
+│   ├── languageUpdater.js   # 언어 파일 업데이트
+│   ├── apiClient.js         # OpenAI API 클라이언트
+│   ├── openaiClient.js      # OpenAI 텍스트 생성
+│   ├── retryHelper.js       # 재시도 로직
+│   └── logger.js           # 로깅
+├── routes/
+│   ├── scheduler.js        # 스케줄러 API
+│   ├── banner.js          # 배너 API
+│   └── lang.js           # 언어 API
+├── prompts/              # 프롬프트 템플릿
+├── lang/                # 생성된 텍스트
+└── random-banner/       # 생성된 이미지
 ```
 
 ## Alpha 릴리즈 노트
@@ -175,11 +223,13 @@ humanplus_page-main/
 - ✅ 스케줄러 시스템
 - ✅ DALL-E 3 이미지 생성
 - ✅ REST API 엔드포인트
+- ✅ 텍스트 생성 기능
+- ✅ 자동 번역 기능
 
 다음 기능들은 아직 개발 중입니다:
-- ⏳ 텍스트 생성 기능
-- ⏳ 자동 번역 기능
 - ⏳ 테스트 커버리지 향상
+- ⏳ 웹 인터페이스 개선
+- ⏳ 에러 처리 강화
 
 ## 라이선스
 

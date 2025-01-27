@@ -23,4 +23,11 @@ async function generateAndSaveContent() {
     }
 }
 
-generateAndSaveContent(); 
+// 스크립트 실행
+if (require.main === module) {
+    generateAndSaveContent();
+}
+
+module.exports = {
+    generateAndSaveContent
+}; 
